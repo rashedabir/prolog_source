@@ -48,10 +48,6 @@ parent(t2, o).
 parent(s2, j).
 parent(s2, o).
 
-parent(n,s).
-parent(p,s).
-parent(s,r).
-parent(e,r).
 
 
 female(z).
@@ -70,9 +66,6 @@ female(v2).
 female(u2).
 female(t2).
 female(s2).
-
-female(p).
-female(e).
 
 
 male(a).

@@ -49,6 +49,7 @@ parent(s2, j).
 parent(s2, o).
 
 
+
 female(z).
 female(x).
 female(y).
@@ -86,7 +87,8 @@ male(n).
 child(H,K):- parent(H, K).
 sibling(H,Q):- parent(K,H), parent(K,Q).
 spouse(K,W):- parent(K,H), parent(W,H), female(W).
-childinlaw(P,E):- parent(E,R), parent(S,R), parent(P,S), female(P).
+childinlaw(P,E):- parent(E,R), spouse(P,R).
+cousin(X,Y):- parent(Z,X), parent(W,Y), sibling(Z,W).
 
 
 
